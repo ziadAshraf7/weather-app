@@ -908,27 +908,47 @@ width: 49px;
 
 @media (max-width : 320px){
   .hourly-forcast{
-    width: 302px;
-
+    width: 284px;
+    height: 176px;
+    padding: 10px
   }
   .hourly-forcast .content-wrapper .temp-data{
     font-size: 9px;
     width: 66px;
   }
 
-  .section1{
-    
+  .weather-prob .content-wrapper{
+    padding: 3px;
   }
-
+  .section1 .timezone {
+    font-size: 11px;
+}
   .section2 {
-    margin-bottom: 11px;
-}
-.right-btn{
-  right: 29px;
+    margin-bottom: -3px;
 }
 
-.left-btn{
-  left: 46px;
+.slider .wrapper .content{
+  height: 146px;
+  padding: 10px;
+}
+.slider .description span{
+  font-size: 11px;
+}
+
+.slider .wrapper .content > h3 {
+  font-size: 10px;
+}
+
+.slider .wrapper .content .icon img {
+  width: 42px;
+}
+
+.right-btn {
+  right: 19px;
+}
+
+.left-btn {
+  left: 35px;
 }
 }
 

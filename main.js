@@ -6,8 +6,6 @@
    const code = '3c4b55d494cc8c577a80d5229feaadf0'
 
 
-fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=55&lon=40&exclude=alerts&appid=${code}`)
-.then((res) => console.log(res.json()))
 
 
 function getweatherdata(){
@@ -99,10 +97,6 @@ function coverpic(path){
 }
 
 
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=banha&appid=${code}`)
-.then(
-    (res) => console.log(res.json()))
-
 
 function getweatherbyregion(){
  let city =  document.querySelector(".search-bar input").value
@@ -111,7 +105,7 @@ if(!city){
     return null
 }
 
- fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${code}`)
+ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${code}`)
  .then(
      (res) => res.json()
  ).then(
@@ -175,8 +169,11 @@ let card = document.querySelector(".slider .wrapper .content")
         
         if(position >= 1096){
            return false
+        }else if(document.documentElement.clientWidth <= 620){
+            position += 178
+            slider.style.marginLeft = -position + "px" 
         }else{
-        position += document.querySelector(".slider .wrapper .content").clientWidth + 10 
+        position += 219
         slider.style.marginLeft = -position + "px"  
         }
     }
@@ -192,8 +189,11 @@ let card = document.querySelector(".slider .wrapper .content")
     function left(){
         if(position <= 0){
            return false
+        }else if(document.documentElement.clientWidth <= 620){
+            position -= 178
+            slider.style.marginLeft = -position + "px" 
         }else{
-            position -= document.querySelector(".slider .wrapper .content").clientWidth + 10
+            position -= 219
         slider.style.marginLeft = -position + "px"
         
         }

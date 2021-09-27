@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>
+          hello world
+      </title>
+      <link  rel="stylesheet" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Urbanist:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+
+
+        <div class="cover-img">
+        <img src="img/dallas-reedy-NEJFAS1Okho-unsplash.jpg" alt="">
+          </div>
+
+
+
+          <div class="header">
+            <h1>current weather</h1>
+          </div>
+          <!--section1 start-->
+          <section class="section1">
+            <div class="date-time">
+              <h1><span class="currentTime"></span> <span class="date"></span></h1>
+              <h3 class="timezone">?/?</h3>
+            </div>
+
+            <div class="btn">
+              <input type="button" value="search">
+            </div>
+          </section>
+        <!--section1 end-->
+       
+          <section class="section2">
+            <div class="weather-prob">
+              <div class="content-wrapper">
+                <div class="weather-description">
+                  <h1>weather-description</h1>
+                  <span>?</span>
+                </div>
+                <div class="min-temp">
+                  <h1>min-tempreture</h1>
+                  <span>?</span>
+                </div>
+          
+                <div class="max-temp">
+                  <h1>max-tempreture</h1>
+                  <span>?</span>
+                </div>
+          
+              <div class="sunrise">
+                <h1>sunrise time</h1>
+                <span>?</span>
+              </div>
+          
+              <div class="sunset">
+                <h1>sunset time</h1>
+                <span>?</span>
+              </div>
+          
+              <div class="visibility">
+                <h1>visibility(m)</h1>
+                <span>?</span>
+              </div>
+          
+          
+              <div class="humidity">
+                <h1>humidity(%)</h1>
+                <span>?</span>
+              </div>
+          
+          
+              <div class="wind">
+                <h1>wind speed(m/s)</h1>
+                <span>?</span>
+              </div>
+          
+              <div class="pressure">
+                <h1>pressure(hpa)</h1>
+                <span>?</span>
+              </div>
+          </div>
+            </div>
+
+
+            <div class="weather-temp">
+              <div class="icon">
+                <img src="icons/unknown.png" alt="">
+              </div>
+              <div class="temp">
+                <h1>?<sup>?</sup><sub>?</sub></h1>
+              </div>
+              <div class="place">
+                <span class="city">city</span>,<span class="country">country</span>
+              </div>
+            </div>
+
+
+          </section>
+
+          <section class="search-result">
+            <div class="content-wrapper">
+             
+              <div class="timezone">
+                <h1><span class="current"></span></h1>
+                <h3 class="zone"><span class="city"></span><span class="country"></span></h3>
+              </div>
+
+            <div class="close-icon">
+              <img src="img/close-cross.png" alt="">
+            </div>
+
+          
+            <div class="search-bar">
+              <img src="img/loupe.png" alt="">
+              <input type="search" placeholder="search for a region">
+            </div>
+
+            <div class="weather">
+              <div class="icon">
+                <img src="icons/unknown.png" alt="">
+              </div>
+              <div class="temp">
+                <h1>?<sup>?</sup><sub>?</sub></h1>
+              </div>
+              <div class="place">
+                <span class="city">city</span>,<span class="country">country</span>
+              </div>
+            </div>
+
+            <div class="weather-prop">
+              <div class="weather-description">
+                <h1>weather-description</h1>
+                <span>?</span>
+              </div>
+      
+              <div class="min-temp">
+                <h1>min-tempreture</h1>
+                <span>?</span>
+              </div>
+        
+              <div class="max-temp">
+                <h1>max-tempreture</h1>
+                <span>?</span>
+              </div>
+        
+            <div class="sunrise">
+              <h1>sunrise time</h1>
+              <span>?</span>
+            </div>
+        
+            <div class="sunset">
+              <h1>sunset time</h1>
+              <span>?</span>
+            </div>
+        
+            <div class="visibility">
+              <h1>visibility(m)</h1>
+              <span>?</span>
+            </div>
+        
+        
+            <div class="humidity">
+              <h1>humidity(%)</h1>
+              <span>?</span>
+            </div>
+        
+        
+            <div class="wind">
+              <h1>wind speed(m/s)</h1>
+              <span>?</span>
+            </div>
+        
+            <div class="pressure">
+              <h1>pressure(hpa)</h1>
+              <span>?</span>
+            </div>
+            </div>
+            </div>
+          </section>
+
+
+
+      
+
+
+      
+
+
+  
+
+
+
+ 
+
+
+
+
+ 
+
+
+<section class="section3">
+  <div class="hourly-forcast">
+    <h1>next 24 hour forcast</h1>
+    <div class="content-wrapper">
+    </div>
+  </div>
+
+
+
+  <div class="slider-wrapper">
+
+    <div class="right-btn ">
+      <button class="right">
+        <img src="img/icons8-more-than-24.png" alt="">
+      </button>
+    </div>
+  
+    <div class="left-btn ">
+      <button class="left">
+        <img src="img/icons8-more-than-24.png" alt="">
+      </button>
+    </div>
+
+
+
+  <div class="slider ">
+    <div class="wrapper">
+       <div class="content">
+         <h1>day</h1>
+         <h3>?/?/?</h3>
+         <div class="icon">
+           <img src="icons/01d.png" alt="">
+         </div>
+         <div class="description">
+           <span>?</span>
+         </div>
+         <div class="temp">
+           <div class="day">
+             <h1>day<span>?</span></h1>
+           </div>
+           <div class="morning">
+             <h1>morning<span>?</span></h1>
+           </div>
+           <div class="evening">
+             <h1>evening<span>?</span></h1>
+           </div>
+           <div class="night">
+             <h1>night<span>?</span></h1>
+           </div>
+         </div>
+        </div>
+
+
+        <div class="content">
+         <h1>day</h1>
+         <h3>?/?/?</h3>
+         <div class="icon">
+           <img src="icons/01d.png" alt="">
+         </div>
+         <div class="description">
+           <span>?</span>
+         </div>
+         <div class="temp">
+           <div class="day">
+             <h1>day<span>?</span></h1>
+           </div>
+           <div class="morning">
+             <h1>morning<span>?</span></h1>
+           </div>
+           <div class="evening">
+             <h1>evening<span>?</span></h1>
+           </div>
+           <div class="night">
+             <h1>night<span>?</span></h1>
+           </div>
+         </div>
+        </div>
+
+
+
+        <div class="content">
+         <h1>day</h1>
+         <h3>?/?/?</h3>
+         <div class="icon">
+           <img src="icons/01d.png" alt="">
+         </div>
+         <div class="description">
+           <span>?</span>
+         </div>
+         <div class="temp">
+           <div class="day">
+             <h1>day<span>?</span></h1>
+           </div>
+           <div class="morning">
+             <h1>morning<span>?</span></h1>
+           </div>
+           <div class="evening">
+             <h1>evening<span>?</span></h1>
+           </div>
+           <div class="night">
+             <h1>night<span>?</span></h1>
+           </div>
+         </div>
+        </div>
+
+
+
+        <div class="content">
+         <h1>day</h1>
+         <h3>?/?/?</h3>
+         <div class="icon">
+           <img src="icons/01d.png" alt="">
+         </div>
+         <div class="description">
+           <span>?</span>
+         </div>
+         <div class="temp">
+           <div class="day">
+             <h1>day<span>?</span></h1>
+           </div>
+           <div class="morning">
+             <h1>morning<span>?</span></h1>
+           </div>
+           <div class="evening">
+             <h1>evening<span>?</span></h1>
+           </div>
+           <div class="night">
+             <h1>night<span>?</span></h1>
+           </div>
+         </div>
+        </div>
+
+
+
+        <div class="content">
+         <h1>day</h1>
+         <h3>?/?/?</h3>
+         <div class="icon">
+           <img src="icons/01d.png" alt="">
+         </div>
+         <div class="description">
+           <span>?</span>
+         </div>
+         <div class="temp">
+           <div class="day">
+             <h1>day<span>?</span></h1>
+           </div>
+           <div class="morning">
+             <h1>morning<span>?</span></h1>
+           </div>
+           <div class="evening">
+             <h1>evening<span>?</span></h1>
+           </div>
+           <div class="night">
+             <h1>night<span>?</span></h1>
+           </div>
+         </div>
+        </div>
+
+
+
+        <div class="content">
+         <h1>day</h1>
+         <h3>?/?/?</h3>
+         <div class="icon">
+           <img src="icons/01d.png" alt="">
+         </div>
+         <div class="description">
+           <span>?</span>
+         </div>
+         <div class="temp">
+           <div class="day">
+             <h1>day<span>?</span></h1>
+           </div>
+           <div class="morning">
+             <h1>morning <span>?</span></h1>
+           </div>
+           <div class="evening">
+             <h1>evening  <span>?</span></h1>
+           </div>
+           <div class="night">
+             <h1>night  <span>?</span></h1>
+           </div>
+         </div>
+        </div>
+
+
+
+        <div class="content">
+         <h1>day</h1>
+         <h3>?/?/?</h3>
+         <div class="icon">
+           <img src="icons/01d.png" alt="">
+         </div>
+         <div class="description">
+           <span>?</span>
+         </div>
+         <div class="temp">
+           <div class="day">
+             <h1>day  <span>?</span></h1>
+           </div>
+           <div class="morning">
+             <h1>morning  <span>?</span></h1>
+           </div>
+           <div class="evening">
+             <h1>evening  <span>?</span></h1>
+           </div>
+           <div class="night">
+             <h1>night  <span>?</span></h1>
+           </div>
+         </div>
+        </div>
+
+
+
+        <div class="content">
+         <h1>day</h1>
+         <h3>?/?/?</h3>
+         <div class="icon">
+           <img src="icons/01d.png" alt="">
+         </div>
+         <div class="description">
+           <span>?</span>
+         </div>
+         <div class="temp">
+           <div class="day">
+             <h1>day  <span>?</span></h1>
+           </div>
+           <div class="morning">
+             <h1>morning  <span>?</span></h1>
+           </div>
+           <div class="evening">
+             <h1>evening  <span>?</span></h1>
+           </div>
+           <div class="night">
+             <h1>night  <span>?</span></h1>
+           </div>
+         </div>
+        </div>
+
+
+       </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+  
+
+
+  </body>
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>    
+</body>
+</html> 
